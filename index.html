@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>runsonmy.computer — Linux &amp; systems work, Huntsville AL</title>
+<meta name="description" content="Flat-rate Linux server setup, automation scripting, self-hosting, and workstation builds in the Huntsville area.">
+<style>
+:root{
+  --ink:#1a1d1a;
+  --paper:#fbfaf7;
+  --dim:#5c615c;
+  --line:#d8d6cf;
+  --accent:#0f6b3f;
+  --term:#101410;
+  --term-text:#c9d1c9;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:17px}
+body{
+  font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--paper);color:var(--ink);
+  line-height:1.6;
+}
+.wrap{max-width:680px;margin:0 auto;padding:0 1.25rem}
+
+/* terminal header — the one loud thing */
+header{background:var(--term);color:var(--term-text);padding:2.5rem 0 2.25rem}
+header .wrap{font-family:ui-monospace,"Cascadia Mono",Menlo,Consolas,monospace;font-size:.95rem}
+header .prompt{color:#6fbf8e}
+header .cmd{color:#e8ede8}
+header .out{margin-top:1rem;white-space:pre-line}
+header .out b{color:#fff;font-weight:600}
+
+main{padding:2.75rem 0 1rem}
+h2{
+  font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--dim);font-weight:600;
+  margin:2.5rem 0 1rem;
+  display:flex;align-items:center;gap:.75rem;
+}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+p{margin-bottom:1rem}
+p.lede{font-size:1.1rem}
+
+/* services */
+.svc{border-top:1px solid var(--line);padding:1.15rem 0}
+.svc:last-of-type{border-bottom:1px solid var(--line)}
+.svc .row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.svc h3{font-size:1rem;font-weight:650}
+.svc .price{
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+  color:var(--accent);font-weight:600;white-space:nowrap;
+}
+.svc p{color:var(--dim);font-size:.95rem;margin:.35rem 0 0}
+
+/* how it works */
+ol{list-style:none;counter-reset:step}
+ol li{counter-increment:step;padding:.4rem 0 .4rem 2.4rem;position:relative}
+ol li::before{
+  content:counter(step,decimal-leading-zero);
+  position:absolute;left:0;top:.55rem;
+  font-family:ui-monospace,Menlo,Consolas,monospace;
+  font-size:.8rem;color:var(--accent);
+}
+
+/* contact */
+.contact{
+  background:var(--term);color:var(--term-text);
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem;
+  padding:1.4rem 1.5rem;margin:1.25rem 0 0;
+}
+.contact a{color:#8fd6ac;text-decoration:none}
+.contact a:hover,.contact a:focus{text-decoration:underline}
+
+footer{padding:2.5rem 0 3rem;color:var(--dim);font-size:.85rem}
+
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+@media (prefers-reduced-motion:no-preference){
+  header .cursor{animation:blink 1.1s steps(1) infinite}
+  @keyframes blink{50%{opacity:0}}
+}
+@media (max-width:480px){
+  html{font-size:16px}
+  .svc .row{flex-direction:column;gap:.15rem}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div><span class="prompt">wyatt@runsonmy.computer:~$</span> <span class="cmd">whoami</span><span class="cursor">▌</span></div>
+    <div class="out">Linux &amp; systems work — <b>Huntsville, AL</b>
+Servers set up right. Manual work automated. Machines that just run.</div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="lede">I set up and fix the computer infrastructure small businesses and individuals depend on — servers, backups, automation, and workstations — at flat rates, so you know the cost before the work starts.</p>
+
+  <h2>Services</h2>
+
+  <div class="svc">
+    <div class="row"><h3>Small office server &amp; backup setup</h3><span class="price">from $400 flat</span></div>
+    <p>A Linux file/backup server for your office, configured, documented, and tested — including automated offsite backups so one failed drive is never a disaster.</p>
+  </div>
+
+  <div class="svc">
+    <div class="row"><h3>Automation scripting</h3><span class="price">from $250 flat</span></div>
+    <p>That spreadsheet task someone redoes every week, the report that takes an afternoon, the files that need renaming and sorting by hand — turned into a script that does it in seconds.</p>
+  </div>
+
+  <div class="svc">
+    <div class="row"><h3>Private cloud &amp; self-hosting setup</h3><span class="price">from $300 flat</span></div>
+    <p>Your files, photos, calendar, and passwords on hardware you own instead of a subscription. I build it, secure it, and show you how to run it.</p>
+  </div>
+
+  <div class="svc">
+    <div class="row"><h3>Custom workstation builds &amp; Linux installs</h3><span class="price">from $150 + parts</span></div>
+    <p>Purpose-built machines for engineering, CAD, or development work — specced, assembled, and delivered ready to use.</p>
+  </div>
+
+  <p style="margin-top:1rem;color:var(--dim);font-size:.95rem">Something adjacent to these? Ask — if I'm not the right fit, I'll say so.</p>
+
+  <h2>How it works</h2>
+  <ol>
+    <li>Tell me the problem in plain terms — no technical vocabulary needed.</li>
+    <li>You get a flat quote and a timeline in writing. No hourly meter running.</li>
+    <li>I do the work, walk you through the result, and leave you documentation.</li>
+  </ol>
+
+  <h2>Contact</h2>
+  <div class="contact">
+    mail: <a href="mailto:work@runsonmy.computer">work@runsonmy.computer</a><br>
+    area: Huntsville / Madison County, on-site or remote
+  </div>
+
+</main>
+
+<footer class="wrap">
+  runsonmy.computer — independent, local, and yes: this site is hand-written HTML with no JavaScript. That's the product philosophy too.
+</footer>
+
+</body>
+</html>
